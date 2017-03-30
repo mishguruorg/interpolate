@@ -1,0 +1,58 @@
+{
+  "name": "@mishguru/interpolate",
+  "version": "0.0.2",
+  "description": "Estimates where data should lie by interpolating through a list of points",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "pkg-build",
+    "lint": "pkg-lint",
+    "test": "pkg-test",
+    "coverage": "pkg-coverage"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
+    ],
+    "plugins": [
+      [
+        "transform-object-rest-spread",
+        {
+          "useBuiltIns": true
+        }
+      ]
+    ],
+    "ignore": [
+      "**/*.spec.js"
+    ]
+  },
+  "ava": {
+    "require": [
+      "babel-register"
+    ],
+    "babel": "inherit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mishguruorg/interpolate.git"
+  },
+  "author": "Jacob Duval <jacob@mish.guru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mishguruorg/interpolate/issues"
+  },
+  "homepage": "https://github.com/mishguruorg/interpolate#readme",
+  "devDependencies": {
+    "@mishguru/package": "^1.1.1"
+  },
+  "dependencies": {
+    "@mishguru/package": "^1.1.1",
+    "ramda": "^0.23.0"
+  }
+}
