@@ -1,5 +1,7 @@
 import { compose, map, mean, reduceRight, reduce, assoc } from 'ramda'
 
+const interpolateSumX = (points) => interpolatePoints(points, true)
+
 const interpolatePoints = (points, annotate = false) => {
   if (points.length === 1) {
     return {
@@ -83,7 +85,8 @@ const interpolate = ({ x: x1, y: y1 }, { x: x2, y: y2 }, fraction) => {
 
 export {
   interpolate,
-  interpolatePoints
+  interpolatePoints,
+  interpolateSumX
 }
 
 export default interpolatePoints
