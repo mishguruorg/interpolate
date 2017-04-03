@@ -27,9 +27,6 @@
           "useBuiltIns": true
         }
       ]
-    ],
-    "ignore": [
-      "**/*.spec.js"
     ]
   },
   "ava": {
