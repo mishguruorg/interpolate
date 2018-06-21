@@ -9,32 +9,6 @@
     "test": "pkg-test",
     "coverage": "pkg-coverage"
   },
-  "babel": {
-    "presets": [
-      [
-        "env",
-        {
-          "targets": {
-            "node": "current"
-          }
-        }
-      ]
-    ],
-    "plugins": [
-      [
-        "transform-object-rest-spread",
-        {
-          "useBuiltIns": true
-        }
-      ]
-    ]
-  },
-  "ava": {
-    "require": [
-      "babel-register"
-    ],
-    "babel": "inherit"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mishguruorg/interpolate.git"
@@ -46,7 +20,7 @@
   },
   "homepage": "https://github.com/mishguruorg/interpolate#readme",
   "devDependencies": {
-    "@mishguru/package": "^1.1.1"
+    "@mishguru/package": "^4.1.0"
   },
   "dependencies": {
     "ramda": "^0.23.0"
