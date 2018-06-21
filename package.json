@@ -1,6 +1,6 @@
 {
   "name": "@mishguru/interpolate",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "Estimates where data should lie by interpolating through a list of points",
   "main": "dist/index.js",
   "scripts": {
