@@ -20,9 +20,9 @@
   },
   "homepage": "https://github.com/mishguruorg/interpolate#readme",
   "devDependencies": {
-    "@mishguru/package": "^4.1.0"
+    "@mishguru/package": "^4.3.1"
   },
   "dependencies": {
-    "ramda": "^0.23.0"
+    "ramda": "^0.25.0"
   }
 }
