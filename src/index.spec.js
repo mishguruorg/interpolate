@@ -29,7 +29,7 @@ test('Interpolate should give us a fractional value between two points', (t) => 
   t.is(craaaazyFraction.x, 4.632509403304996)
 })
 
-test('interpolateViewsForProgress should take a list of points and tell us, on average how far the average views lie in the list', t => {
+test('interpolateViewsForProgress should take a list of points and tell us, on average how far the average views lie in the list', (t) => {
   const easyInfo = [[2, 2], [2, 4], [2, 6], [2, 8], [2, 10]]
   checkInterpolateViewsForProgress(t, easyInfo, 6, 6)
 
@@ -57,4 +57,3 @@ const checkInterpolateViewsForProgress = (t, pairs, expectedy, expectedx) => {
 }
 
 const convertPairsToPoints = map(([x, y]) => ({ x, y }))
-

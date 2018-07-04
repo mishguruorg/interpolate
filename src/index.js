@@ -34,7 +34,7 @@ const interpolatePoints = (points, annotate = false) => {
 
 const findMeanY = compose(
   mean,
-  map(p => p.y)
+  map((p) => p.y)
 )
 
 const annotatePoint = (acc, point) => {
