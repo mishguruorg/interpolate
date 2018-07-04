@@ -1,0 +1,16 @@
+machine:
+  node:
+    version: 10.5.0
+  environment:
+    PATH: "${PATH}:${HOME}/${CIRCLE_PROJECT_REPONAME}/node_modules/.bin"
+
+dependencies:
+  pre:
+    - echo $NPMRC > ~/.npmrc
+  override:
+    - npm install
+
+test:
+  override:
+    - npm run lint
+    - npm run test -- --verbose
