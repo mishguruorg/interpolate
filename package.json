@@ -6,6 +6,8 @@
   "scripts": {
     "build": "pkg-build",
     "lint": "pkg-lint",
+    "prepublish": "pkg-build",
+    "postpublish": "git push origin master --tags",
     "test": "pkg-test",
     "coverage": "pkg-coverage"
   },
